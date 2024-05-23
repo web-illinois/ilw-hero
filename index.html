@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Component</title>
+    <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
+    <script type="module" src="/src/ilw-hero.js"></script>
+  </head>
+  <body style="margin: 0; padding: 0;">
+    <ilw-hero align="left" focus="bottom" shadow theme="white">
+      <img src="https://picsum.photos/1920/1280" alt="" slot="background">
+      <h1>Innovating solutions every year</h1>
+      <ul>
+          <li>
+              <a href="#">Link 1</a>
+          </li>
+          <li>
+              <a href="#">Link 2</a>
+          </li>
+          <li>
+              <a href="#">Link 3</a>
+          </li>
+      </ul>
+   </ilw-hero>
+
+ <ilw-hero collapse="true">
+    <h2>Innovating solutions every year</h2>
+    <ul>
+        <li>
+            <a href="#">Link 1</a>
+        </li>
+        <li>
+            <a href="#">Link 2</a>
+        </li>
+        <li>
+            <a href="#">Link 3</a>
+        </li>
+    </ul>
+ </ilw-hero>
+
+ <ilw-hero>
+  <video slot="background" autoplay="" loop="" muted="" poster="https://cdn-e.education.illinois.edu/video/first_image.png"><source src="https://cdn-e.education.illinois.edu/video/homepage8.mp4" type="video/mp4">Your browser does not support the video tag.
+  </video>
+  <h2>Innovating solutions every year</h2>
+  <ul>
+    <li>
+        <a href="#">Link 1</a>
+    </li>
+    <li>
+        <a href="#">Link 2</a>
+    </li>
+    <li>
+        <a href="#">Link 3</a>
+    </li>
+  </ul>
+</ilw-hero>
+
+<ilw-hero collapse="true" theme="white">
+  <h2>Innovating solutions every year</h2>
+  <a href="#">Link 1</a>
+</ilw-hero>
+
+  </body>
+</html>

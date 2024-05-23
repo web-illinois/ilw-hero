@@ -1,0 +1,138 @@
+:root {
+  --ilw-hero--height: 223px;
+  --ilw-hero--font: 700 2.25rem/2.25rem var(--il-font-sans);
+  --ilw-hero--background: var(--il-blue);
+  --ilw-hero--button-background-color: var(--il-orange);
+  --ilw-hero--button-foreground-color: white;
+  --ilw-hero--button-border-color: white;
+  --ilw-hero--focused-button-background-color: white;
+  --ilw-hero--focused-button-foreground-color: var(--il-orange);
+  --ilw-hero--focused-button-border-color: white;
+  --ilw-hero--text-color: white;
+  --ilw-hero--shadow-color: rgba(0, 0, 0, 1);
+}
+
+ilw-hero {
+  img, *[slot="background"] {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  h1, h2, h3 {
+    all: initial;
+    font: var(--ilw-hero--font);
+    color: var(--ilw-hero--text-color);
+    text-shadow: 2px 2px 2px var(--ilw-hero--shadow-color);
+    text-align: inherit;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    margin: 10px 0 0 0;
+
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      a, button {
+        background-color: var(--ilw-hero--button-background-color);
+        color: var(--ilw-hero--button-foreground-color);
+        display: inline-block;
+        margin: 6px 0;
+        padding: 12px 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 0.25em;
+        border: 2px solid var(--ilw-hero--button-border-color);
+        font: 700 1.188rem / 1.25rem var(--il-font-sans);
+        letter-spacing: .01em;
+        transition: background-color 0.3s;
+        cursor: pointer;
+      
+        &:visited {
+          outline: 0;
+          background-color: var(--ilw-hero--button-background-color);
+          color: var(--ilw-hero--button-foreground-color);
+          border: 2px solid var(--ilw-hero--button-border-color);
+        }
+      
+        &:hover,
+        &:focus {
+          outline: 0;
+          background-color: var(--ilw-hero--focused-button-background-color);
+          color: var(--ilw-hero--focused-button-foreground-color);
+          border-color: var(--ilw-hero--focused-button-border-color);
+        }
+      }
+    }
+  }
+
+  &[theme="orange"] {
+    --ilw-hero--background: var(--il-orange);
+    --ilw-hero--button-background-color: var(--il-blue);
+    --ilw-hero--focused-button-foreground-color: var(--il-blue);
+  }
+  
+  &[theme="white"] {
+    --ilw-hero--background: white;
+    --ilw-hero--button-background-color: white;
+    --ilw-hero--button-foreground-color: var(--il-blue);
+    --ilw-hero--button-border-color: var(--il-blue);
+    --ilw-hero--focused-button-background-color: var(--il-blue);
+    --ilw-hero--focused-button-foreground-color: white;
+    --ilw-hero--focused-button-border-color: var(--il-blue);
+    --ilw-hero--text-color: #252525;
+    --ilw-hero--shadow-color: rgba(255, 255, 255, 1);
+  }
+
+  &[focus="top"] img {
+    object-position: top;
+  }
+  &[focus="bottom"] img {
+    object-position: bottom;
+  }
+  &[focus="left"] img {
+    object-position: left;
+  }
+  &[focus="right"] img {
+    object-position: right;
+  }  
+}
+
+@media (min-width: 576px) {
+  :root {
+    --ilw-hero--height: 315px;
+    --ilw-hero--font: 700 3rem/3rem var(--il-font-sans);
+  }
+}
+
+@media (min-width: 767px) {
+  :root {
+    --ilw-hero--height: 557px;
+    --ilw-hero--font: 700 4rem/4rem var(--il-font-sans);
+  }
+  ilw-hero[shadow] h1, ilw-hero[shadow] h2, ilw-hero[shadow] h3 {
+    background: radial-gradient(rgba(0,0,0,.9),rgba(0,0,0,0.1)); 
+    padding: 1rem!important;
+  }
+
+  ilw-hero[theme="white"][shadow] h1, ilw-hero[theme="white"][shadow] h2, ilw-hero[theme="white"][shadow] h3 {
+    background: radial-gradient(rgba(255,255,255,.9),rgba(255,255,255,0.1)); 
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --ilw-hero--font: 700 4.5rem/4.5rem var(--il-font-sans);
+  }
+}

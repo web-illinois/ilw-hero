@@ -1,0 +1,140 @@
+{
+    "title": "Hero",
+    "name": "ilw-hero",
+    "tag": "ilw-hero",
+    "type": "web component",
+    "description": "The Hero Image component adds a large picture at the top of the page. It is used to draw attention to the page and can be used to set the tone for the page.",
+    "use-preview": true,
+    "open-new-window": false,
+    "toolkit-version": "1.0",
+    "versions": [
+        {
+            "version": "1.0",
+            "date": "5/22/2024",
+            "description": "",
+            "samples": [
+                {
+                    "name": "default",
+                    "text": "<img src='https://picsum.photos/1920/1280' alt='' slot='background'><h1>Innovating solutions every year</h1><ul><li><a href='#'>Link 1</a></li><li><a href='#'>Link 2</a></li><li><a href='#'>Link 3</a></li></ul>",
+                    "parent-element": "",
+                    "parent-style": ""
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "theme",
+                    "description": "Color theme used",
+                    "depreciated": false,
+                    "type": "dropdown",
+                    "values": [
+                        "",
+                        "blue",
+                        "orange",
+                        "white"
+                    ]
+                },
+                {
+                    "name": "align",
+                    "description": "Text alignment",
+                    "depreciated": false,
+                    "type": "dropdown",
+                    "values": [
+                        "",
+                        "top",
+                        "bottom",
+                        "left",
+                        "right",
+                        "top-left",
+                        "top-right",
+                        "bottom-left",
+                        "bottom-right"
+                    ]
+                },
+                {
+                    "name": "focus",
+                    "description": "Focus for the image",
+                    "depreciated": false,
+                    "type": "dropdown",
+                    "values": [
+                        "",
+                        "top",
+                        "bottom",
+                        "left",
+                        "right"
+                    ]
+                },
+                {
+                    "name": "shadow",
+                    "description": "Whether or not to include a shadow",
+                    "depreciated": false,
+                    "type": "dropdown",
+                    "values": [
+                        "",
+                        "true"
+                    ]
+                },
+                {
+                    "name": "collapse",
+                    "description": "Whether or not to remove the image / background in mobile",
+                    "depreciated": false,
+                    "type": "dropdown",
+                    "values": [
+                        "",
+                        "true"
+                    ]
+                }
+            ],
+            "classes": [],
+            "css-variables": [
+                {
+                    "name": "--ilw-hero--height",
+                    "description": "Size of the hero image"
+                },
+                {
+                    "name": "--ilw-hero--font",
+                    "description": "Font for heading"
+                },
+                {
+                    "name": "--ilw-hero--background",
+                    "description": "Hex color for background"
+                },
+                {
+                    "name": "--ilw-hero--button-background-color",
+                    "description": "Hex color for button background"
+                },
+                {
+                    "name": "--ilw-hero--button-background-color",
+                    "description": "Hex color for button background"
+                },
+                {
+                    "name": "--ilw-hero--button-foreground-color",
+                    "description": "Hex color for button text"
+                },
+                {
+                    "name": "--ilw-hero--button-border-color",
+                    "description": "Hex color for button border"
+                },
+                {
+                    "name": "--ilw-hero--focused-button-background-color",
+                    "description": "Hex color for focus button background"
+                },
+                {
+                    "name": "--ilw-hero--focused-button-foreground-color",
+                    "description": "Hex color for focus button text"
+                },
+                {
+                    "name": "--ilw-hero--focused-button-border-color",
+                    "description": "Hex color for focus button border"
+                },
+                {
+                    "name": "--ilw-hero--shadow-color",
+                    "description": "Hex color for shadow"
+                },
+                {
+                    "name": "--ilw-hero--text-color",
+                    "description": "Hex color for heading"
+                }
+            ]
+        }
+    ]
+}
