@@ -34,7 +34,7 @@ class Hero extends LitElement {
           <slot name="background"></slot>
         </div>
         <div class="content-outer">
-          <div class="content-inner ${this.align}">
+          <div class="content-inner ${this.align.replace('-', ' ')}">
             <slot></slot>
           </div>
         </div>

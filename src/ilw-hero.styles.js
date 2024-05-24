@@ -81,21 +81,21 @@ img {
   .content-inner.left {
     text-align: left;
     align-items: flex-start;
-    margin: auto auto auto 100px;
+    margin-left: 100px;
   }
 
   .content-inner.right {
     text-align: right;
     align-items: flex-end;
-    margin: auto 100px auto auto;
+    margin-right: 100px;
   }
 
   .content-inner.top {
-    margin: 0 auto auto auto;
+    margin-top: 0;
   }
 
   .content-inner.bottom {
-    margin: auto auto 0 auto;
+    margin-bottom: 0;
   }
   .content-inner.top-left {
     text-align: left;
@@ -124,7 +124,7 @@ img {
 
 @media (min-width: 992px) {
   .content-inner {
-    width: 50%;
+    width: var(--ilw-hero--text-width);
   }
 }
 `;

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Hero component for the web toolkit. The Hero Image component adds a large picture at the top of the page. It is used to draw attention to the page and can be used to set the tone for the page. 
+Hero component for the web toolkit. The Hero Image component adds a large picture at the top of the page. It is used to draw attention to the page and can be used to set the tone for the page.
 
 ## Contact Team
 
@@ -10,11 +10,11 @@ jonker@illinois.edu
 
 ## NPM Install
 
-None yet, still in alpha. 
+None yet, still in alpha.
 
 ## Files
 
-None yet, still in alpha
+None yet, still in alpha.
 
 ## Code Examples
 
@@ -74,10 +74,12 @@ None yet, still in alpha
 
 ## Accessibility Notes and Use
 
-The obvious one is color contrast. Make sure you have an image that text can overlay on. Match the theme with the dominant color of the image (so if you have a white image, use the white theme, if you have a dark image, use the blue theme).
+The obvious one is color contrast. Make sure you have an image that text can overlay on. Match the theme with the dominant color of the image (so if you have a white image, use the white theme, if you have a dark image, use the blue theme). Make sure you test using multiple screen sizes, as the image will shift based on the size of the screen. If you need assistance, you can use the shadow option to put a shadow in front of the heading text. 
 
 For a graphic, make sure you choose a graphic that would reasonably display on a monitor. Do not choose a portrait image, or it will be cropped oddly. 
 
+You can include buttons using the ilw-buttons class or ilw-button class. 
+
 ## External references
 
-N/A
+https://usability.yale.edu/usability-best-practices/hero-imagescarousels

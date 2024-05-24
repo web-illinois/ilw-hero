@@ -99,32 +99,8 @@
                     "description": "Hex color for background"
                 },
                 {
-                    "name": "--ilw-hero--button-background-color",
-                    "description": "Hex color for button background"
-                },
-                {
-                    "name": "--ilw-hero--button-background-color",
-                    "description": "Hex color for button background"
-                },
-                {
-                    "name": "--ilw-hero--button-foreground-color",
-                    "description": "Hex color for button text"
-                },
-                {
-                    "name": "--ilw-hero--button-border-color",
-                    "description": "Hex color for button border"
-                },
-                {
-                    "name": "--ilw-hero--focused-button-background-color",
-                    "description": "Hex color for focus button background"
-                },
-                {
-                    "name": "--ilw-hero--focused-button-foreground-color",
-                    "description": "Hex color for focus button text"
-                },
-                {
-                    "name": "--ilw-hero--focused-button-border-color",
-                    "description": "Hex color for focus button border"
+                    "name": "--ilw-hero--text-width",
+                    "description": "Text width for heading"
                 },
                 {
                     "name": "--ilw-hero--shadow-color",
