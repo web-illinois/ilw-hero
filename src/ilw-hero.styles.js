@@ -9,7 +9,7 @@ export default css`
 .background {
   position: relative;
   width: 100%;
-  min-height: var(--ilw-hero--height, 223px);
+  height: var(--ilw-hero--height, 223px);
   background-color: var(--ilw-hero--background);
 }
 
@@ -64,7 +64,7 @@ img {
 
   .content-outer {
     background: transparent;
-    min-height: var(--ilw-hero--height, 223px);
+    height: var(--ilw-hero--height, 223px);
     display: flex;
   }
 
