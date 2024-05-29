@@ -22,7 +22,7 @@ None yet, still in alpha.
 <ilw-hero align="left" focus="bottom" shadow theme="white">
   <img src="https://picsum.photos/1920/1280" alt="" slot="background">
   <h1>Innovating solutions every year</h1>
-  <ul>
+  <ul class="ilw-buttons">
       <li>
           <a href="#">Link 1</a>
       </li>
@@ -39,7 +39,7 @@ None yet, still in alpha.
 ```
 <ilw-hero collapse="true">
   <h2>Innovating solutions every year</h2>
-  <ul>
+  <ul class="ilw-buttons">
       <li>
           <a href="#">Link 1</a>
       </li>
@@ -58,7 +58,7 @@ None yet, still in alpha.
   <video slot="background" autoplay="" loop="" muted="" poster="https://cdn-e.education.illinois.edu/video/first_image.png"><source src="https://cdn-e.education.illinois.edu/video/homepage8.mp4" type="video/mp4">Your browser does not support the video tag.
   </video>
   <h2>Innovating solutions every year</h2>
-  <ul>
+  <ul class="ilw-buttons">
     <li>
         <a href="#">Link 1</a>
     </li>
