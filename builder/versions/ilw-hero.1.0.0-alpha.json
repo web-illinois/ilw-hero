@@ -22,6 +22,11 @@
 			"name": "noimage",
 			"description": "No image",
 			"text": "<h1>Innovating solutions every year</h1><ul class='ilw-buttons'><li><a href='#'>Link 1</a></li><li><a href='#'>Link 2</a></li><li><a href='#'>Link 3</a></li></ul>"
+		},
+		{
+			"name": "video",
+			"description": "Video background",
+			"text": "<video slot='background' autoplay='' loop='' muted='' poster='https://cdn-e.education.illinois.edu/video/first_image.png'><source src='https://cdn-e.education.illinois.edu/video/homepage8.mp4' type='video/mp4'>Your browser does not support the video tag.</video><h2>Innovating solutions every year</h2><ul class='ilw-buttons'><li><a href='#''>Link 1</a></li><li><a href='#'>Link 2</a></li><li><a href='#''>Link 3</a></li></ul>"
 		}
 	],
 	"attributes-fixed": [],
@@ -64,6 +69,15 @@
 				"bottom",
 				"left",
 				"right"
+			]
+		},
+		{
+			"name": "width",
+			"description": "Whether or not this follows current borders or is full width",
+			"depreciated": false,
+			"values": [
+				"",
+				"full"
 			]
 		},
 		{

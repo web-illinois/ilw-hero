@@ -6,6 +6,17 @@ export default css`
   position: relative;
 }
 
+.hero.fixed {
+  left:50%;
+  margin-left:-50vw;
+  margin-right:-50vw;
+  padding-left:0;
+  padding-right:0;
+  position:relative;
+  right:50%;
+  width:100vw;
+}
+
 .background {
   position: relative;
   width: 100%;

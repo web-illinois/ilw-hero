@@ -1,0 +1,57 @@
+<!doctype html>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Component</title>
+  <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
+  <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
+  <script type="module" src="/src/ilw-hero.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      const params = new URLSearchParams(window.location.search);
+      document.querySelectorAll("ilw-hero").forEach(component => {
+        if (params.has('theme')) {
+          component.setAttribute('theme', params.get('theme'));
+        }
+        if (params.has('width')) {
+          component.setAttribute('width', params.get('width'));
+        }
+        if (params.has('align')) {
+          component.setAttribute('align', params.get('align'));
+        }
+        if (params.has('focus')) {
+          component.setAttribute('focus', params.get('focus'));
+        }
+        if (params.has('shadow')) {
+          component.setAttribute('shadow', params.get('shadow'));
+        }
+      });
+      document.querySelectorAll(".ilw-buttons").forEach(buttons => {
+        if (params.has('buttontheme')) {
+          buttons.classList.add('ilw-theme-' + params.get('buttontheme'));
+        }
+      });
+    });
+  </script>
+
+<body style="margin: 0 auto; padding: 0; max-width: 1200px;">
+  <ilw-hero>
+    <video slot="background" autoplay="" loop="" muted=""
+      poster="https://cdn-e.education.illinois.edu/video/first_image.png">
+      <source src="https://cdn-e.education.illinois.edu/video/homepage8.mp4" type="video/mp4">Your browser does not
+      support the video tag.
+    </video>
+    <h2>Innovating solutions every year</h2>
+    <ul class="ilw-buttons">
+      <li>
+        <a href="#">Link 1</a>
+      </li>
+      <li>
+        <a href="#">Link 2</a>
+      </li>
+      <li>
+        <a href="#">Link 3</a>
+      </li>
+    </ul>
+  </ilw-hero>
+</body>

@@ -4,6 +4,18 @@
 
 Hero component for the web toolkit. The Hero Image component adds a large picture at the top of the page. It is used to draw attention to the page and can be used to set the tone for the page.
 
+There is one slot, called "background", used for the background item. This is optional, but is most likely an image. 
+
+The default text should include a header (h1, h2, h3) and possibly a button list. The buttons will need to be styled separately. 
+
+Attributes include:
+* theme: the theme/background of the content. Options are blue, orange, gray, blue-gradient, orange-gradient
+* width: whether or not this is contained in the parent (default) or if it will expand to full width (full). Auto will not work in this case. 
+* align: whether or not the text is vertical or horizonally aligned (top-left, left-center, right-bottom, etc.)
+* focus: if the image has a focal point if it shrinks or not. Values are top, bottom, left, right. Default is center. 
+* shadow: if the text should have a drop shadow on it. 
+* collapse: if the image should disappear in mobile view (useful if the image is just a blank pattern or does not give relevant information)
+
 ## Contact Team
 
 jonker@illinois.edu
