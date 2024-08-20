@@ -36,3 +36,5 @@ jobs:
       run: aws s3 sync ./dist/ s3://dev.toolkit.illinois.edu/content/$COMPONENT_NAME/$VERSION --delete --acl bucket-owner-full-control
     - name: Invalidate Cloudfront cache
       run: aws cloudfront create-invalidation --distribution-id ${{ vars.TOOLKIT_AWS_CLOUDFRONT_DEV }} --paths "/$COMPONENT_NAME/$VERSION*"
+    - name: Install to npm
+      run: npm publish --access public
