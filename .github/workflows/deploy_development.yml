@@ -38,3 +38,5 @@ jobs:
       run: aws cloudfront create-invalidation --distribution-id ${{ vars.TOOLKIT_AWS_CLOUDFRONT_DEV }} --paths "/$COMPONENT_NAME/$VERSION*"
     - name: Install to npm
       run: npm publish --access public
+      env:
+          NODE_AUTH_TOKEN: ${{secrets.TOOLKIT_NPM_SECRET}}
