@@ -1,4 +1,4 @@
-name: deploy_development
+name: publish_npm
 on:
   workflow_dispatch:
 jobs:
