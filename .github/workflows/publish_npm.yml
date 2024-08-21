@@ -1,6 +1,10 @@
 name: publish_npm
 on:
   workflow_dispatch:
+  push:
+    tags: [ '**' ]
+  pull_request:
+    tags: [ '**' ]
 jobs:
   build:
     runs-on: ubuntu-latest
