@@ -36,11 +36,3 @@ jobs:
       run: aws s3 sync ./dist/ s3://dev.toolkit.illinois.edu/content/$COMPONENT_NAME/$VERSION --delete --acl bucket-owner-full-control
     - name: Invalidate Cloudfront cache
       run: aws cloudfront create-invalidation --distribution-id ${{ vars.TOOLKIT_AWS_CLOUDFRONT_DEV }} --paths "/$COMPONENT_NAME/$VERSION*"
-    - uses: actions/setup-node@v4
-      with:
-        node-version: '22.x'
-        registry-url: 'https://registry.npmjs.org'
-    - name: Install to npm
-      run: npm publish --access public
-      env:
-          NODE_AUTH_TOKEN: ${{secrets.TOOLKIT_NPM_SECRET}}
