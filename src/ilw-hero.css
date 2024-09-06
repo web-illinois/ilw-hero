@@ -8,53 +8,58 @@
 }
 
 ilw-hero {
-  img, *[slot="background"] {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
+  display: block;
+}
 
-  h1, h2, h3 {
-    all: initial;
-    font: var(--ilw-hero--font);
-    color: var(--ilw-hero--text-color);
-    text-shadow: 2px 2px 2px var(--ilw-hero--shadow-color);
-    text-align: inherit;
-  }
+ilw-hero img, ilw-hero *[slot="background"] {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-  &[theme="orange"] {
-    --ilw-hero--background: var(--il-orange);
-    --ilw-hero--button-background-color: var(--il-blue);
-    --ilw-hero--focused-button-foreground-color: var(--il-blue);
-  }
+ilw-hero h1, ilw-hero h2, ilw-hero h3 {
+  all: initial;
+  font: var(--ilw-hero--font);
+  color: var(--ilw-hero--text-color);
+  text-shadow: 2px 2px 2px var(--ilw-hero--shadow-color);
+  text-align: inherit;
+}
+
+ilw-hero[theme="orange"] {
+  --ilw-hero--background: var(--il-orange);
+  --ilw-hero--button-background-color: var(--il-blue);
+  --ilw-hero--focused-button-foreground-color: var(--il-blue);
+}
   
-  &[theme="white"] {
-    --ilw-hero--background: white;
-    --ilw-hero--button-background-color: white;
-    --ilw-hero--button-foreground-color: var(--il-blue);
-    --ilw-hero--button-border-color: var(--il-blue);
-    --ilw-hero--focused-button-background-color: var(--il-blue);
-    --ilw-hero--focused-button-foreground-color: white;
-    --ilw-hero--focused-button-border-color: var(--il-blue);
-    --ilw-hero--text-color: #252525;
-    --ilw-hero--shadow-color: rgba(255, 255, 255, 1);
-  }
+ilw-hero[theme="white"] {
+  --ilw-hero--background: white;
+  --ilw-hero--button-background-color: white;
+  --ilw-hero--button-foreground-color: var(--il-blue);
+  --ilw-hero--button-border-color: var(--il-blue);
+  --ilw-hero--focused-button-background-color: var(--il-blue);
+  --ilw-hero--focused-button-foreground-color: white;
+  --ilw-hero--focused-button-border-color: var(--il-blue);
+  --ilw-hero--text-color: #252525;
+  --ilw-hero--shadow-color: rgba(255, 255, 255, 1);
+}
 
-  &[focus="top"] img {
-    object-position: top;
-  }
-  &[focus="bottom"] img {
-    object-position: bottom;
-  }
-  &[focus="left"] img {
-    object-position: left;
-  }
-  &[focus="right"] img {
-    object-position: right;
-  }  
+ilw-hero[focus="top"] img {
+  object-position: top;
+}
+ilw-hero[focus="bottom"] img {
+  object-position: bottom;
+}
+ilw-hero[focus="left"] img {
+  object-position: left;
+}
+ilw-hero[focus="right"] img {
+  object-position: right;
+}  
+ilw-hero[width="fixed"] {
+  container-type: inline-size;
 }
 
 @media (min-width: 576px) {
