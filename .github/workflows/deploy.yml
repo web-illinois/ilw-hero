@@ -1,7 +1,7 @@
 name: deploy
 on:
-  push:
-    tags: [ '**' ]
+  release:
+    types: [published]
 env:
   MAJORVERSION: ''
   MINORVERSION: ''
