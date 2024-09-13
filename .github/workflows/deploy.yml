@@ -7,7 +7,7 @@ env:
   MINORVERSION: ''
   FULLVERSION: ''
   PRERELEASE: ''
-  COMPONENT_NAME: 'ilw-hero'   # set this to the web component name you are using
+  COMPONENT_NAME: ${{ github.event.repository.name }}
 jobs:
   build:
     runs-on: ubuntu-latest
