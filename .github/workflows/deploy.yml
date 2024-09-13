@@ -39,13 +39,17 @@ jobs:
       env: 
         GITHUB_BRANCH: ${{ steps.get_version.outputs.prerelease }}
     - name: Display major version install
-      run: echo "Installing major version ${MAJORVERSION}"
+      run: echo "Installing major version ${MAJORVERSION} for ${COMPONENT_NAME}"
     - name: Display minor version install
-      run: echo "Installing minor version ${MINORVERSION}"
+      run: echo "Installing minor version ${MINORVERSION} for ${COMPONENT_NAME}"
     - name: Display patch (full) version install
-      run: echo "Installing patch (full) version ${FULLVERSION}"
-    - name: Display prerelease version install
-      run: echo "Installing prerelease version ${PRERELEASE}"
+      run: echo "Installing patch (full) version ${FULLVERSION} for ${COMPONENT_NAME}"
+    - name: Production run
+      if: ${{ steps.get_version.outputs.prerelease == '' }}
+      run: echo "Running production deployment"
+    - name: Prerelease run
+      if: ${{ steps.get_version.outputs.prerelease != '' }}
+      run: echo "Running development deployment"
 
     - run: npm install
     - run: npm rebuild
