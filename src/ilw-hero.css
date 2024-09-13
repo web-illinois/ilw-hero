@@ -9,6 +9,7 @@
 
 ilw-hero {
   display: block;
+  container-type: inline-size;
 }
 
 ilw-hero img, ilw-hero *[slot="background"] {
@@ -58,9 +59,6 @@ ilw-hero[focus="left"] img {
 ilw-hero[focus="right"] img {
   object-position: right;
 }  
-ilw-hero[width="fixed"] {
-  container-type: inline-size;
-}
 
 @media (min-width: 576px) {
   :root {
