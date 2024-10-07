@@ -10,6 +10,7 @@ class Hero extends LitElement {
       focus: { type: String, attribute: true },
       shadow: { type: Boolean, attribute: true },
       collapse: { type: Boolean, attribute: true },
+      alwayson: { type: Boolean, attribute: true },
       align: { type: String, attribute: true },
       width: { type: String, attribute: true }
     };
@@ -25,6 +26,7 @@ class Hero extends LitElement {
     this.focus = '';
     this.shadow = false;
     this.collapse = false;
+    this.alwayson = false;
     this.theme = '';
     this.width = '';
   }
@@ -35,7 +37,7 @@ class Hero extends LitElement {
 
   render() {
     return html`
-      <div class="hero ${this.outerWidth}">
+      <div class="hero ${this.outerWidth} ${this.alwayson ? 'always-over' : ''}">
         <div role="presentation" class="background ${this.collapse ? 'collapse' : ''}">
           <slot name="background"></slot>
         </div>

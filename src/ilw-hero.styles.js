@@ -8,13 +8,14 @@ export default css`
 
 .hero.fixed {
   left:50%;
-  margin-left:-50vw;
-  margin-right:-50vw;
-  padding-left:0;
-  padding-right:0;
-  position:relative;
-  right:50%;
-  width:100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-left: 0;
+  padding-right: 0;
+  right: 50%;
+  width: 100vw;
+  display: block;
+  container-type: inline-size;
 }
 
 .background {
@@ -22,6 +23,14 @@ export default css`
   width: 100%;
   height: var(--ilw-hero--height, 223px);
   background-color: var(--ilw-hero--background);
+}
+
+.always-over .background {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .background.collapse {
@@ -40,6 +49,18 @@ img {
   position: relative;
   z-index: 100;
   padding: 0 20px;
+}
+
+.always-over .content-outer {
+    background: transparent;
+    height: var(--ilw-hero--height, 223px);
+    display: flex;
+}
+
+.always-over .content-outer .content-inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
 }
 
 .content-inner {
