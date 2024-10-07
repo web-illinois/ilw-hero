@@ -2,7 +2,7 @@
   "name": "@illinois-toolkit/ilw-hero",
   "description": "Illinois Toolkit:  The Hero Image component adds a large picture at the top of the page.",
   "private": false,
-  "version": "1.0.0-beta",
+  "version": "1.0.1-beta",
   "type": "module",
   "files": [
     "src/**",
