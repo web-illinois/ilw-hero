@@ -15,6 +15,7 @@ Attributes include:
 * focus: if the image has a focal point if it shrinks or not. Values are top, bottom, left, right. Default is center. 
 * shadow: if the text should have a drop shadow on it. 
 * collapse: if the image should disappear in mobile view (useful if the image is just a blank pattern or does not give relevant information)
+* alwayson: if the text should always appear over the image in mobile view (useful if the image is just a blank pattern or does not give relevant information and there will always be sufficient color contrast between the text and image)
 
 ## Contact Team
 
