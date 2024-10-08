@@ -25,6 +25,12 @@
         if (params.has('shadow')) {
           component.setAttribute('shadow', params.get('shadow'));
         }
+        if (params.has('collapse')) {
+          component.setAttribute('collapse', true);
+        }
+        if (params.has('alwayson')) {
+          component.setAttribute('alwayson', true);
+        }
       });
       document.querySelectorAll(".ilw-button").forEach(buttons => {
         if (params.has('buttontheme')) {

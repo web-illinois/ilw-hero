@@ -6,10 +6,10 @@
     "element-name": "ilw-hero",
 	"description": "The Hero Image component adds a large picture at the top of the page. It is used to draw attention to the page and can be used to set the tone for the page.",
 	"builder-version": "1.0-beta",
-	"version": "1.0.0-beta",
-	"date": "9/13/2024",
-	"css": "https://dev.toolkit.illinois.edu/ilw-hero/1.0.0-beta/ilw-hero.css",
-	"js": "https://dev.toolkit.illinois.edu/ilw-hero/1.0.0-beta/ilw-hero.js",
+	"version": "1.0.1-beta",
+	"date": "10/08/2024",
+	"css": "https://dev.toolkit.illinois.edu/ilw-hero/1.0.1-beta/ilw-hero.css",
+	"js": "https://dev.toolkit.illinois.edu/ilw-hero/1.0.1-beta/ilw-hero.js",
 	"production": false,
     "notes": "",
 	"parent-style": "",
@@ -93,6 +93,15 @@
 		{
 			"name": "collapse",
 			"description": "Whether or not to remove the image / background in mobile",
+			"depreciated": false,
+			"values": [
+				"",
+				"true"
+			]
+		},
+		{
+			"name": "alwayson",
+			"description": "Whether or not to drop the text in mobile",
 			"depreciated": false,
 			"values": [
 				"",
