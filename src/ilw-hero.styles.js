@@ -16,6 +16,7 @@ export default css`
   width: 100vw;
   display: block;
   container-type: inline-size;
+  contain: layout;
 }
 
 .background {
