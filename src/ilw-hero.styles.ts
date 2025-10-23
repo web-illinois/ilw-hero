@@ -160,4 +160,9 @@ img {
     width: var(--ilw-hero--text-width);
   }
 }
+@media (max-width: 767px) {
+    .always-over .content-outer {
+      background-color: var(--ilw-hero--background);
+    }
+}
 `;
