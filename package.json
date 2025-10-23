@@ -3,7 +3,7 @@
   "description": "Illinois Toolkit:  The Hero Image component adds a large picture at the top of the page.",
   "private": false,
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "files": [
     "src/**",
