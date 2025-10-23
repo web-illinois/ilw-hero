@@ -1,8 +1,8 @@
 :root {
   --ilw-hero--height: 223px;
   --ilw-hero--font: 700 2.25rem/2.25rem var(--il-font-sans);
-  --ilw-hero--background: var(--il-blue);
-  --ilw-hero--text-color: white;
+  --ilw-hero--background: var(--ilw-color--heading);
+  --ilw-hero--text-color: var(--ilw-color--background);
   --ilw-hero--text-width: 40%;
   --ilw-hero--shadow-color: rgba(0, 0, 0, 1);
 }
@@ -30,20 +30,20 @@ ilw-hero h1, ilw-hero h2, ilw-hero h3 {
 }
 
 ilw-hero[theme="orange"] {
-  --ilw-hero--background: var(--il-orange);
-  --ilw-hero--button-background-color: var(--il-blue);
-  --ilw-hero--focused-button-foreground-color: var(--il-blue);
+  --ilw-hero--background: var(--ilw-color--orange--background);
+  --ilw-hero--button-background-color: var(--ilw-color--orange--control-accent);
+  --ilw-hero--focused-button-foreground-color: var(---ilw-color--orange--control-accent);
 }
   
 ilw-hero[theme="white"] {
-  --ilw-hero--background: white;
-  --ilw-hero--button-background-color: white;
-  --ilw-hero--button-foreground-color: var(--il-blue);
-  --ilw-hero--button-border-color: var(--il-blue);
-  --ilw-hero--focused-button-background-color: var(--il-blue);
-  --ilw-hero--focused-button-foreground-color: white;
-  --ilw-hero--focused-button-border-color: var(--il-blue);
-  --ilw-hero--text-color: #252525;
+  --ilw-hero--background: var(--ilw-color--white--background);
+  --ilw-hero--button-background-color: var(--ilw-color--white--control);
+  --ilw-hero--button-foreground-color: var(--ilw-color--white--control-text);
+  --ilw-hero--button-border-color: var(--ilw-color--white--control-text);
+  --ilw-hero--focused-button-background-color: var(--ilw-color--white--control-text);
+  --ilw-hero--focused-button-foreground-color: var(--ilw-color--white--control);
+  --ilw-hero--focused-button-border-color: var(--ilw-color--white--control-text);
+  --ilw-hero--text-color: var(--ilw-color--white--text);
   --ilw-hero--shadow-color: rgba(255, 255, 255, 1);
 }
 
