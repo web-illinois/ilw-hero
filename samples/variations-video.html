@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Component - Mobile</title>
+  <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
+  <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/latest/ilw-global.css">
+  <script type="module" src="/src/ilw-hero.ts"></script>
+</head>
+<body style="margin: 0 auto; padding: 0;">
+<div id="variations">
+
+  <ilw-hero id="hero-video">
+    <video slot="background" autoplay="" loop="" muted=""
+           poster="https://cdn-e.education.illinois.edu/video/first_image.png">
+      <source src="https://cdn-e.education.illinois.edu/video/homepage8.mp4" type="video/mp4">Your browser does not
+      support the video tag.
+    </video>
+    <h2>Innovating solutions every year</h2>
+    <ul class="ilw-buttons">
+      <li>
+        <a href="#">Link 1</a>
+      </li>
+      <li>
+        <a href="#">Link 2</a>
+      </li>
+      <li>
+        <a href="#">Link 3</a>
+      </li>
+    </ul>
+  </ilw-hero>
+</div>
+
+<script type="module">
+  import { createVariations } from "@illinois-toolkit/ilw-core";
+  import Hero from "../src/ilw-hero.ts";
+
+  // Only mobile-specific attributes
+  createVariations(document.getElementById("variations"), Hero, {
+    theme: [undefined, "blue", "orange", "white"],
+    align: [undefined,
+      "top",
+      "bottom",
+      "left",
+      "right",
+      "top-left",
+      "top-right",
+      "bottom-left",
+      "bottom-right"],
+    focus: [undefined, "top", "bottom", "left", "right"],
+    width: [undefined, "full"],
+    shadow: [undefined, "true"]
+  }, ["hero-video"]);
+</script>
+</body>
+</html>
