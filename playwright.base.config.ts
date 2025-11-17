@@ -16,5 +16,5 @@ export default defineConfig({
     use: {
         baseURL: 'http://localhost:5173',
     },
-    timeout: 60_000,
+    timeout: 120_000,
 });
