@@ -5,8 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hero Component - Mobile</title>
   <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
-  <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/latest/ilw-global.css">
-  <script type="module" src="/src/ilw-hero.ts"></script>
+  <link rel="stylesheet" href="https://cdn.toolkit.illinois.edu/ilw-global/3/ilw-global.css">
+  <script type="module" src="/src/ilw-hero.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      const params = new URLSearchParams(window.location.search);
+      document.querySelectorAll("ilw-hero").forEach(component => {
+        params.forEach((value, key) => {
+            component.setAttribute(key, value);
+        });
+      });
+    });
+  </script>
 </head>
 <body style="margin: 0 auto; padding: 0;">
 <div id="variations">
