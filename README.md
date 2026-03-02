@@ -6,7 +6,7 @@ Hero component for the web toolkit. The Hero Image component adds a large pictur
 
 There is one slot, called "background", used for the background item. This is optional, but is most likely an image. 
 
-The default text should include a header (h1, h2, h3) and possibly a button list. The buttons will need to be styled separately. 
+The default text should include a header (h1, h2, h3) and possibly a button list. The buttons may be styled separately. Alternatively, you can choose a paragraph tag with a title class -- this will style it like the header but allow you to not have a specific header information for accessibility. 
 
 Attributes include:
 * theme: the theme/background of the content. Options are blue, orange, gray, blue-gradient, orange-gradient
