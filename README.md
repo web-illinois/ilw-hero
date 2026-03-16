@@ -8,6 +8,8 @@ There is one slot, called "background", used for the background item. This is op
 
 The default text should include a header (h1, h2, h3) and possibly a button list. The buttons may be styled separately. Alternatively, you can choose a paragraph tag with a title class -- this will style it like the header but allow you to not have a specific header information for accessibility. 
 
+You can use a p tag with the class 'title' instead of a heading tag if you want to mimic a heading but not have it show up in the accessibility tree.
+
 Attributes include:
 * theme: the theme/background of the content. Options are blue, orange, gray, blue-gradient, orange-gradient
 * width: whether or not this is contained in the parent (default) or if it will expand to full width (full). Auto will not work in this case. 
