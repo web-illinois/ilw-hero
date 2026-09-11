@@ -1,12 +1,26 @@
 {
-    "title": "Hero",
-    "tag": "ilw-hero",
-	"github": "https://github.com/web-illinois/ilw-hero/",
-    "type": "web component",
-    "element-name": "ilw-hero",
-	"description": "The Hero Image component adds a large picture at the top of the page. It is used to draw attention to the page and can be used to set the tone for the page.",
-    "purpose": "Draw a user's attention, set the page's tone.",
-    "toolkit-version": "1.2",
-    "production-version": "1.2",
-    "development-version": "latest"
+  "title": "Hero",
+  "id": "ilw-hero",
+  "type": "Web Component",
+  "repository-name": "ilw-hero",
+  "description": "Set the tone for a page with a prominent image, headline, supporting text, and optional call to action.",
+  "purpose": "Draw a user's attention, set the page's tone.",
+  "customtemplates": [],
+  "versions": [
+    {
+      "name": "1.0",
+      "notes": "",
+      "template": "1.0"
+    },
+    {
+      "name": "1.1",
+      "notes": "",
+      "template": "1.0"
+    },
+    {
+      "name": "1.2",
+      "notes": "",
+      "template": "1.2"
+    }
+  ]
 }
