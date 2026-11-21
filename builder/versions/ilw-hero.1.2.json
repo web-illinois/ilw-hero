@@ -93,6 +93,16 @@
       ]
     },
     {
+      "name": "shade",
+      "description": "Type of shading for the hero background",
+      "depreciated": false,
+      "values": [
+        "",
+        "full",
+        "directional"
+      ]
+    },
+    {
       "name": "collapse",
       "description": "Whether or not to remove the image / background in mobile",
       "depreciated": false,

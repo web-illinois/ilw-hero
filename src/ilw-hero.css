@@ -1,10 +1,12 @@
-:root {
+ilw-hero {
   --ilw-hero--height: 223px;
-  --ilw-hero--font: 700 2.25rem/2.25rem var(--il-font-sans);
+  --ilw-hero--font-style: var(--il-font-sans);
+  --ilw-hero--font: 700 2.25rem/2.25rem var(--ilw-hero--font-style);
   --ilw-hero--background: var(--ilw-color--heading);
   --ilw-hero--text-color: var(--ilw-color--background);
   --ilw-hero--text-width: 40%;
   --ilw-hero--shadow-color: rgba(0, 0, 0, 1);
+  --ilw-hero--background-tint: none;
 }
 
 ilw-hero {
@@ -27,6 +29,73 @@ ilw-hero h1, ilw-hero h2, ilw-hero h3, ilw-hero p.title {
   color: var(--ilw-hero--text-color);
   text-shadow: 2px 2px 2px var(--ilw-hero--shadow-color);
   text-align: inherit;
+}
+
+ilw-hero[font="heading"] {
+  --ilw-hero--font-style: var(--il-font-heading);
+}
+ilw-hero[shade="full"] {
+  --ilw-hero--background-tint: rgba(19, 41, 75, 0.4);
+}
+ilw-hero[shade="full-black"] {
+  --ilw-hero--background-tint: rgba(0, 0, 0, 0.4);
+}
+ilw-hero[shade="directional"], ilw-hero[shade="directional"][align="center"] {
+    --ilw-hero--background-tint: radial-gradient(rgba(19, 41, 75, .6), rgba(0, 0, 0, 0));
+}
+ilw-hero[shade="directional"][align="left"] {
+    --ilw-hero--background-tint:  linear-gradient(to left, rgba(0, 0, 0, 0), rgba(19, 41, 75, .6));
+}
+ilw-hero[shade="directional"][align="right"] {
+    --ilw-hero--background-tint:  linear-gradient(to right, rgba(0, 0, 0, 0),  rgba(19, 41, 75, .6));
+}
+ilw-hero[shade="directional"][align="top"] {
+    --ilw-hero--background-tint:  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(19, 41, 75, .6));
+}
+ilw-hero[shade="directional"][align="bottom"] {
+    --ilw-hero--background-tint:  linear-gradient(to bottom, rgba(0, 0, 0, 0),  rgba(19, 41, 75, .6));
+}
+ilw-hero[shade="directional"][align="top-left"] {
+    --ilw-hero--background-tint:  linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(19, 41, 75, .6));
+}
+ilw-hero[shade="directional"][align="top-right"] {
+    --ilw-hero--background-tint:  linear-gradient(to top right, rgba(0, 0, 0, 0), rgba(19, 41, 75, .6));
+}
+ilw-hero[shade="directional"][align="bottom-left"] {
+    --ilw-hero--background-tint:  linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(19, 41, 75, .6));
+}
+ilw-hero[shade="directional"][align="bottom-right"] {
+    --ilw-hero--background-tint:  linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(19, 41, 75, .6));
+}
+ilw-hero[shade="directional-black"], ilw-hero[shade="directional-black"][align="center"] {
+    --ilw-hero--background-tint: radial-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
+}
+ilw-hero[shade="directional-black"][align="left"] {
+    --ilw-hero--background-tint:  linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .6));
+}
+ilw-hero[shade="directional-black"][align="right"] {
+    --ilw-hero--background-tint:  linear-gradient(to right, rgba(0, 0, 0, 0),  rgba(0, 0, 0, .6));
+}
+ilw-hero[shade="directional-black"][align="top"] {
+    --ilw-hero--background-tint:  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .6));
+}
+ilw-hero[shade="directional-black"][align="bottom"] {
+    --ilw-hero--background-tint:  linear-gradient(to bottom, rgba(0, 0, 0, 0),  rgba(0, 0, 0, .6));
+}
+ilw-hero[shade="directional-black"][align="top-left"] {
+    --ilw-hero--background-tint:  linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .6));
+}
+ilw-hero[shade="directional-black"][align="top-right"] {
+    --ilw-hero--background-tint:  linear-gradient(to top right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .6));
+}
+ilw-hero[shade="directional-black"][align="bottom-left"] {
+    --ilw-hero--background-tint:  linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .6));
+}
+ilw-hero[shade="directional-black"][align="bottom-right"] {
+    --ilw-hero--background-tint:  linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .6));
+}
+ilw-hero[shade][theme="white"] {
+  --ilw-hero--background-tint:  rgba(255, 255, 255, 0.4);
 }
 
 ilw-hero[theme="orange"] {
@@ -61,16 +130,16 @@ ilw-hero[focus="right"] img {
 }  
 
 @media (min-width: 576px) {
-  :root {
+  ilw-hero {
     --ilw-hero--height: 315px;
-    --ilw-hero--font: 700 3rem/3rem var(--il-font-sans);
+    --ilw-hero--font: 700 3rem/3rem var(--ilw-hero--font-style);
   }
 }
 
 @media (min-width: 767px) {
-  :root {
+  ilw-hero {
     --ilw-hero--height: 557px;
-    --ilw-hero--font: 700 4rem/4rem var(--il-font-sans);
+    --ilw-hero--font: 700 4rem/4rem var(--ilw-hero--font-style);
   }
   ilw-hero[shadow] h1, ilw-hero[shadow] h2, ilw-hero[shadow] h3 {
     background: radial-gradient(rgba(0,0,0,.9),rgba(0,0,0,0.1)); 
@@ -83,7 +152,7 @@ ilw-hero[focus="right"] img {
 }
 
 @media (min-width: 992px) {
-  :root {
-    --ilw-hero--font: 700 4.5rem/4.5rem var(--il-font-sans);
+  ilw-hero {
+    --ilw-hero--font: 700 4.5rem/4.5rem var(--ilw-hero--font-style);
   }
 }

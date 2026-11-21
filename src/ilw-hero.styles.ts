@@ -26,6 +26,14 @@ export default css`
   background-color: var(--ilw-hero--background);
 }
 
+.background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--ilw-hero--background-tint); 
+  pointer-events: none;
+}
+
 .always-over .background {
   position: absolute;
   width: 100%;
@@ -49,7 +57,7 @@ img {
   background: var(--ilw-hero--background);
   position: relative;
   z-index: 100;
-  padding: 0 20px;
+  padding: 0 var(--ilw-margin--side);
 }
 
 .always-over .content-outer {
@@ -108,19 +116,18 @@ img {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    max-width: 1200px;
   }
 
   .content-inner.left {
     text-align: left;
     align-items: flex-start;
-    margin-left: 100px;
+    margin-left: 0;
   }
 
   .content-inner.right {
     text-align: right;
     align-items: flex-end;
-    margin-right: 100px;
+    margin-right: 0;
   }
 
   .content-inner.top {
