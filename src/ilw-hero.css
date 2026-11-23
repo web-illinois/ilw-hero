@@ -102,6 +102,11 @@ ilw-hero[theme="orange"] {
   --ilw-hero--background: var(--ilw-color--orange--background);
   --ilw-hero--button-background-color: var(--ilw-color--orange--control-accent);
   --ilw-hero--focused-button-foreground-color: var(---ilw-color--orange--control-accent);
+  --ilw-color--background: white;
+}
+
+ilw-hero[theme="blue"] {
+  --ilw-color--background: white;
 }
   
 ilw-hero[theme="white"] {
